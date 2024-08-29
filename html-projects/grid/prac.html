@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* main-container */
+        .main-container{
+            height: 100vh;
+            width: 100vw;
+         
+        }
+        /* box-one */
+        .box-one{
+            height: 40%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+           
+        }
+        /* one */
+        .one{
+           border-style: solid;
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+        }
+        /* a */
+        .a{
+          
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-left: 20px;
+           
+        }
+        /* x */
+        .x{
+            border-style: solid;
+            height: 100px;
+            width: 100px;
+        }
+        /* b */
+        .b{
+           
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+        /* y */
+        .y{
+            border-style: solid;
+            height: 100px;
+            width: 100px;
+        }
+
+        /* two */
+        .two{
+            border-style: solid;
+        }
+        /* box-two */
+        .box-two{
+            height: 60%;
+            width: 100%;
+            border-style: solid;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <!-- box-one -->
+        <div class="box-one">
+            <!-- one -->
+            <div class="one">
+                <!-- box-a -->
+                <div class="a">
+                    <div class="x"></div>
+                </div>
+                <!-- boxb -->
+                <div class="b">
+                    <div class="y"></div>
+                </div>
+            </div>
+            <div class="two"></div>
+        </div>
+        <div class="box-two"></div>
+    </div>
+</body>
+</html>
