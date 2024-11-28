@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* main-container */
+        .main-container {
+            background-image: url(../../assets/images/back2.jpg);
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 50px;
+        }
+
+        /* container */
+        .container {
+            height: 80vh;
+            width: 30vw;
+            background-color: gray;
+            text-align: center;
+            padding: 5%;
+            margin-top: 30px;
+        }
+
+        .box {
+            height: 10vh;
+            width: 65vh;
+            background-color: white;
+        }
+
+        /* button */
+        button {
+            background-color: green;
+            padding: 10px;
+            border-radius: 10px;
+            width: 90%;
+            height: 8%;
+            font-size: 20px;
+        }
+
+        /* input */
+        input {
+            width: 90%;
+            height: 5%;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main-container -->
+    <div class="main-container">
+        <div class="container">
+            <div class="box">
+                <h1 id="demo">Result</h1>
+            </div>
+            <br>
+            <br>
+            <!-- first input -->
+            <input type="text" id="first-name" placeholder="Enter username">
+            <br />
+            <br />
+            <!-- second input -->
+            <input type="password" id="second-number" placeholder="Enter password">
+            <br />
+            <br />
+            <!-- button -->
+            <button type="button" onclick="login()">Login</button>
+            <br />
+            <br />
+        </div>
+    </div>
+    <script>
+        // function login(){
+        //  // input
+        //  let x = document.getElementById("first-name").value;
+        // let y =document.getElementById("second-number").value;
+        // let z =(x=="admin"&& y=="pass123"?"login-succesful":"login-unsuccesful")
+        // output
+        // document.getElementById("demo").innerHTML= z;
+        // }
+
+        function login() {
+            const x = "admin";
+            const y = "pass123";
+           
+            if (x == "admin" && y == "pass123") {
+                document.getElementById("demo").innerHTML = "Succesful"
+            } else {
+                document.getElementById("demo").innerHTML = "unseccesful"
+            }
+        }
+    </script>
+</body>
+
+</html>
