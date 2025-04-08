@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <style>
+      /* Global Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+
+      /* Nav section */
+      nav {
+        width: 100%;
+        font-size: 18px;
+      }
+
+      .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #de3163;
+        height: 60px;
+        color: white;
+        flex-wrap: wrap;
+      }
+
+      .header-logo {
+        font-size: 30px;
+        color: white;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+
+      ul {
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        flex-wrap: wrap;
+      }
+
+      ul li {
+        list-style: none;
+        margin: 0 10px;
+      }
+
+      ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+      }
+
+      ul li a:hover {
+        color: #ffd700;
+      }
+
+      /* Box-One Section */
+      .box-one {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        background-color: black;
+        font-size: 50px;
+        padding: 100px 20px;
+      }
+
+      .box-one h1 {
+        font-size: 36px;
+        color: #0073e6;
+      }
+
+      .one, .two {
+        flex: 1 1 300px;
+        max-width: 500px;
+        padding: 20px;
+      }
+
+      .one img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+      }
+
+      h2 {
+        font-size: 28px;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 18px;
+        color: white;
+        margin: 15px 0;
+      }
+
+      button {
+        height: 40px;
+        width: 140px;
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+
+      /* Box-Two Section */
+      .box-two {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        padding: 60px 20px;
+      }
+
+      .two-B {
+        max-width: 800px;
+        color: white;
+      }
+
+      .two-B h5 {
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .two-B p {
+        line-height: 1.8;
+      }
+
+      /* Box-Three Section */
+      .box-three {
+        background-color: black;
+        padding: 40px 20px;
+      }
+
+      .box-three img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        border-radius: 15px;
+        border: 2px solid white;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .box-three img:hover {
+        transform: scale(1.05);
+      }
+
+      .main-one,
+      .main-two {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
+      }
+
+      /* Box-Four Section */
+      .box-four {
+        text-align: center;
+        padding: 20px;
+        background-color: #de3163;
+        font-size: 24px;
+        flex-wrap: wrap;
+      }
+
+      .box-four a {
+        margin: 10px;
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+      }
+
+      .box-four a:hover {
+        color: #ffd700;
+      }
+
+      /* RESPONSIVE MEDIA QUERIES */
+      @media (max-width: 768px) {
+        .nav-bar {
+          flex-direction: column;
+          height: auto;
+        }
+
+        ul {
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+        }
+
+        ul li {
+          margin: 10px 0;
+        }
+
+        .box-one {
+          flex-direction: column;
+          padding-top: 60px;
+        }
+
+        .main-one,
+        .main-two {
+          gap: 20px;
+        }
+
+        h2, h1 {
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+
+        .box-four {
+          font-size: 20px;
+        }
+
+        button {
+          width: 100%;
+          max-width: 160px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .header-logo {
+          font-size: 24px;
+        }
+
+        ul li a {
+          font-size: 16px;
+        }
+
+        .box-four a {
+          font-size: 16px;
+        }
+
+        .two-B p {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="nav-bar">
+        <div class="header-logo">My Portfolio</div>
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Contact-Us">Contact-Us</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Box-One Section: Welcome Text -->
+    <div class="box-one" id="Home">
+      <div class="one">
+        <img src="assets/images/avtarg.png" alt="Avatar" />
+      </div>
+      <div class="two">
+        <h2>Hi, I'M SHITAL GORLE</h2>
+        <h1>Full Stack Developer</h1>
+        <p>
+          Passionate about crafting beautiful, high-performance websites and<br />
+          web apps with a sharp focus on design and user experience.
+        </p>
+        <p>
+          <button>
+            <a href="./html-projects/resume-main.html">Download Resume</a>
+          </button>
+        </p>
+      </div>
+    </div>
+
+    <!-- Box-Two Section: About Me -->
+    <div class="box-two" id="About">
+      <div class="two-B">
+        <h1 style="text-align: center;">About Me:-</h1>
+        <p>
+          Creative and analytical developer with strong academic and professional
+          experience. Seeking to leverage skills to help a company grow its brand
+          and reach its target audience. Full-stack developers are adept at
+          handling multiple aspects of a project, from user interface design to
+          server-side scripting and database management.
+        </p>
+        <h5>Full Stack Developer (HTML, CSS, JavaScript)</h5>
+        <p>
+          Experience with HTML, CSS, JavaScript, Node.js, and Express.js. Skilled in
+          building responsive websites and applications. Also familiar with C++, Java,
+          Python, Android Development, and API testing.
+        </p>
+      </div>
+    </div>
+
+    <!-- Box-Three Section: Projects -->
+    <div class="box-three" id="Projects">
+      <h1 style="text-align: center;">Projects:-</h1>
+      <div class="main-one">
+        <div><a href="./html-projects/html-projects.html"><img src="./assets/images/htmlbac.png" alt="HTML Projects" /></a></div>
+        <div><a href="./html-projects/css-projects.html"><img src="./assets/images/cssback.jpg" alt="CSS Projects" /></a></div>
+        <div><a href="./html-projects/javacript-projects.html"><img src="./assets/images/javascript.jpg" alt="JavaScript Projects" /></a></div>
+      </div>
+      <div class="main-two">
+        <div><a href="./html-projects/boostrap-projects.html"><img src="./assets/images/boostrap.webp" alt="Bootstrap Projects" /></a></div>
+        <div><a href="./html-projects/testcase.html"><img src="./assets/images/testcase.jpg" alt="Test Cases" /></a></div>
+        <div><a href="https://fantastic-wisp-c39148.netlify.app/"><img src="./assets/images/react.jpeg" alt="React Project" /></a></div>
+      </div>
+    </div>
+
+    <!-- Box-Four Section: Contact Links -->
+    <div class="box-four" id="Contact-Us">
+      <a href="https://github.com/shitalgorle/shitalFullStackDeveloper">Github</a>
+      <a href="https://www.linkedin.com/login">LinkedIn</a>
+      <a href="https://www.facebook.com/login/">Facebook</a>
+      <a href="https://join.skype.com/invite/vjNof6Ekgo61">Skype</a>
+    </div>
+  </body>
+</html>
